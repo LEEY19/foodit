@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Foodit</title>
+    <%= csrf_meta_tags %>
+
+    <script src="https://use.fontawesome.com/2263772b85.js"></script>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body style="font-family: Avenir;>
+
+    <nav class="navbar navbar-default" role="navigation" id="foodie_nav">
+      <div id="bbbbb">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand foodie_nav_link" href="/">Foodit</a>
+          </div>
+
+          
+          <ul class="nav navbar-nav navbar-right" style="color: white;">
+            <li>
+              <%= link_to "What & How", "#", class: "foodie_nav_link", id: "for_what_and_how" %>
+            </li> 
+            <li>
+              <%= link_to "For Foodies", "#", class: "foodie_nav_link", id: "for_foodie" %>
+            </li> 
+            <li>
+              <%= link_to "For Restauranteurs", "#", class: "foodie_nav_link", id: "for_res" %>
+            </li> 
+            <li>
+              <%= link_to "Stay Connected", "#", class: "foodie_nav_link", id: "for_contact" %>
+            </li> 
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+
+
+    <%= yield %>
+  </body>
+</html>

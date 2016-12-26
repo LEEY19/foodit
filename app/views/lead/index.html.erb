@@ -1,0 +1,111 @@
+<div style="height:10px;"></div>
+
+<div class="row">
+  <div class="col-md-6 heading_1">
+    <h1 class="header_title">FOODIES</h1>
+    <h2 class="header_text">Dining simplified</h2>
+  </div>
+  <div class="col-md-6 heading_2">
+    <h1 class="header_title">RESTAURATUERS</h1>
+    <h2 class="header_text">Full-suite customer <br/> management solution</h2>
+  </div>
+
+</div>
+
+<div style="height:10px;"></div>
+
+<div class="row what_and_how_section">
+  
+
+</div>
+
+<div style="height:10px;"></div>
+
+<div class="row foodie_section">
+  <div class="container">
+    <h1>One food app to discover, quality-check, join queue lines, book and enquire restaurants</h1>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-3 icon_section"><i class="fa fa-3x fa-search" aria-hidden="true"></i></div>
+    <div class="col-md-7 text_section"><span>Conveniently search for restaurants of your preference using various filters such as location, food type and waiting times</span></div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-3 icon_section"><i class="fa fa-3x fa-hourglass-half" aria-hidden="true"></i></div>
+    <div class="col-md-7 text_section"><span>Wander around with a peace of mind while waiting for your table to be ready, as the restauranteur will send you push notifications minutes before your turn is up</span></div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-3 icon_section"><i class="fa fa-3x fa-address-book" aria-hidden="true"></i></div>
+    <div class="col-md-7 text_section"><span>Place a table booking immediately after viewing reviews and menu and being satisfied with what the restaurant has got to offer</span></div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-3 icon_section"><i class="fa fa-5x fa-mobile" aria-hidden="true"></i></div>
+    <div class="col-md-7 text_section"><span>Message restaurant managers just like how you would to your friends through Whatsapp for enquiries, enabling a convenient a continuous conversation as you wish</span></div>
+  </div>
+
+</div>
+
+<div style="height:10px;"></div>
+
+<div class="row restaurant_section">
+  <div class="container">
+    <h1>One dashboard to manage queues, enquiries and bookings</h1>
+  </div>
+  <div class="col-md-4 section">
+    <i class="fa fa-5x fa-users" aria-hidden="true"></i>
+    <p class="title">Waitlist Management</p>
+    <p class="text">Don't lose customers just because you can't sit them quick enough. Manage your customer queues effectively by sending them notifications when their table is ready, and by enabling them to constantly monitor waiting times</p>
+
+  </div>
+  <div class="col-md-4 section">
+    <i class="fa fa-5x fa-comments" aria-hidden="true"></i>
+    <p class="title">Real-time Messaging</p>
+    <p class="text">Offer your customers the ease of contacting you via a chat system. Stay engaged in conversations with your potential customers anytime, anywhere</p>
+
+  </div>
+  <div class="col-md-4 section">
+    <i class="fa fa-5x fa-table" aria-hidden="true"></i>
+    <p class="title">Booking Management</p>
+    <p class="text">Offer convenience to your customers who want to make reservations at your restaurant and manage bookings seamlessly</p>
+
+  </div>
+</div>
+
+<div style="height:10px;"></div>
+
+<div id="contact_us">
+  <div class="contact_us_1">
+    
+  </div>
+
+  <div class="contact_us_2">
+
+  <h1>Stay Connected</h1>
+  <h3>Drop us your email or any comments to stay updated with our progress, and be notified once our service is ready</h3>
+
+  <%= form_for @lead, url: lead_index_path, :method => 'post' do |form| %>
+    <div class="form-group">
+      <%= form.text_field :name, placeholder: "Name",type: 'text', class: 'form-control'  %>
+    </div>
+
+    <div class="form-group">
+      <%= form.text_field :email, placeholder: "Email", type: 'text', class: 'form-control'  %>
+    </div>
+
+    <div class="form-group">
+      <%= form.text_area :comments, placeholder: "Comments", type: 'text', class: 'form-control'  %>
+    </div>
+    
+    <div class="form-actions">
+      <%= form.button "Stay In Touch", class: "btn btn-primary", id: "form_button"  %>
+    </div>
+  <% end %>
+
+  </div>
+    
+</div>
+
+
