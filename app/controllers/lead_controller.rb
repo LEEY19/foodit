@@ -7,7 +7,7 @@ class LeadController < ApplicationController
   def create
     @lead = Lead.new(lead_params)
     if @lead.save
-      # LeadMailer.welcome_email(@lead).deliver_now
+      LeadMailer.welcome_email(@lead).deliver_now
       respond_to do |format|
         format.js 
       end
