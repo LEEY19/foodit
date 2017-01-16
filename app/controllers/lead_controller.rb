@@ -5,7 +5,15 @@ class LeadController < ApplicationController
   end
   
   def create
-    byebug
+    @lead = Lead.new(lead_params)
+    if @lead.save
+      # LeadMailer.welcome_email(@lead).deliver_now
+      respond_to do |format|
+        format.js 
+      end
+    else
+      render 'new'
+    end
   end
 
   private

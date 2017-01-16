@@ -43,7 +43,7 @@
   <br>
   <div class="row">
     <div class="col-md-3 icon_section"><i class="fa fa-5x fa-mobile" aria-hidden="true"></i></div>
-    <div class="col-md-7 text_section"><span>Message restaurant managers just like how you would to your friends through Whatsapp for enquiries, enabling a convenient a continuous conversation as you wish</span></div>
+    <div class="col-md-7 text_section"><span>Message restaurant managers with our in-built chat function for enquiries, enabling a convenient a continuous conversation as you wish</span></div>
   </div>
 
 </div>
@@ -86,7 +86,7 @@
   <h1>Stay Connected</h1>
   <h3>Drop us your email or any comments to stay updated with our progress, and be notified once our service is ready</h3>
 
-  <%= form_for @lead, url: lead_index_path, :method => 'post' do |form| %>
+  <%= form_for @lead, url: lead_index_path(format: 'js'), remote: true, :method => 'post' do |form| %>
     <div class="form-group">
       <%= form.text_field :name, placeholder: "Name",type: 'text', class: 'form-control'  %>
     </div>
