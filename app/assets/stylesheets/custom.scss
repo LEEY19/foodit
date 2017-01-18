@@ -6,15 +6,21 @@
 
 #foodie_nav {
   width: 100%;
+  border: 0;
 }
 
 .foodie_nav_link {
-  color: white;
+  color: white !important;
 }
 .foodie_nav_link:hover {
-  color: black;
+  color: black !important;
   transition-duration: 0.7s;
 }
+
+.responsive-menu{
+    display:inline-block;
+    color: black !important;
+  }
 /*.clearfix {
   *zoom: 1;
 }

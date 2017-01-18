@@ -1,0 +1,46 @@
+.icon-bar{
+	background: white !important;
+}
+
+.navbar-toggle {
+	border: 0 !important;
+}
+
+.navbar-toggle:hover, .navbar-toggle:focus {
+  background-color: transparent !important;
+}
+
+@media screen and (max-width: 768px) {
+  .heading_1, .heading_2 {
+    width: 50vw;
+    height: 50vh;
+    float: left;
+    padding-left: 0px;
+  }
+   .heading_1{
+  	margin-left: 15px
+  }
+  .header_text {
+  	font-size: 5vw;
+  }
+  .header_title{
+  	font-size: 8vw;
+  	padding:0px; 
+  	float: left;
+  }
+  .heading_1 .header_text,
+  .heading_1 .header_title  {
+  	text-align: right;
+  }
+
+  .heading_2 .header_text,
+  .heading_2 .header_title {
+  	text-align: left;
+  }
+
+  .heading_1 h1, .heading_1 h2,
+  .heading_2 h1, .heading_2 h2{
+  	margin-left: 0%;
+  }
+  
+}
