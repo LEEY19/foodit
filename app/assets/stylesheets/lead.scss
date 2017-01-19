@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+body{
+  font-family: "Avenir Roman";
+}
+
 .heading_1 {
   position: relative;
   display: block;
@@ -189,7 +193,7 @@
   text-align: center;
   justify-content: center;
   color: white;
-  z-index: 99999;
+  z-index: 99;
   box-shadow: 0 0 25px rgb(0,0,0);
   padding: 10px 90px;
 }

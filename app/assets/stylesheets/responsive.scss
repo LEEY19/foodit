@@ -11,20 +11,32 @@
 }
 
 @media screen and (max-width: 768px) {
+  .navbar{
+    z-index: 100;
+  }
+
+  .heading_top{
+    margin-right: 0px;
+  }
+
   .heading_1, .heading_2 {
     width: 50vw;
     height: 50vh;
     float: left;
     padding-left: 0px;
   }
-   .heading_1{
-  	margin-left: 15px
+  .heading_1{
+  	margin-left: 15px;
   }
+
+
   .header_text {
   	font-size: 5vw;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
   .header_title{
-  	font-size: 8vw;
+  	font-size: 5vw;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   	padding:0px; 
   	float: left;
   }
@@ -42,5 +54,66 @@
   .heading_2 h1, .heading_2 h2{
   	margin-left: 0%;
   }
+
+  .what_and_how_section, .foodie_section,
+  .restaurant_section, #contact_us {
+    width: 100vw;
+    margin: 0px;
+  }
   
+  .foodie_section {
+    h1{
+      font-size: 5vw;
+    }
+    .row{
+      display: flex;
+    }
+    .text_section{
+      font-size: 4vw;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      text-align: justify;
+    }
+    .icon_section{
+   
+      flex: 1;
+      font-size: 2vw;
+      text-align: center !important;
+      margin: auto;
+      .fa{
+        display:inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .restaurant_section{
+    overflow:auto; 
+    h1{
+      font-size: 5vw;
+    }
+
+    .section{
+      margin-top: 0;
+      .fa{
+        font-size: 10vw;
+      }
+
+      .text{
+        font-size: 4vw;
+        text-align: justify;
+      }
+    }
+  }
+
+  #contact_us{
+    h1{
+      font-size: 6vw;
+    }
+    h3{
+      font-size: 4vw;
+    }
+    .contact_us_2{
+      padding: 2vh 5vw;
+    }
+  }
 }
