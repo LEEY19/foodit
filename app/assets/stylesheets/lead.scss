@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "Avenir Roman";
+  src: url(/assets/font/avenir-roman.tff) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family: "Avenir Roman";
+}
+
 .heading_1 {
   position: relative;
   display: block;
@@ -20,17 +31,6 @@
     transition-duration: 0.7s;
     opacity: 0.5;
   }      
-/*  #btn-defaultt {
-    height: 50px;
-    position: absolute;
-    top: 60%;
-    margin-top: -25px;
-    background: #22b6b8;
-    color: white;
-    font-size: 20px;
-    border: none;
-    opacity: 0.8;
-  }*/
   .header_title {
     position: absolute;
     top: 35%;
@@ -43,11 +43,6 @@
     color: white;
     width: 100%;
   }
-/*  #btn-defaultt:hover {
-    background: #32a6a8;
-    transition-duration: 1s;
-    opacity: 1;
-  }*/
 }
 
 .heading_2 {
@@ -198,7 +193,7 @@
   text-align: center;
   justify-content: center;
   color: white;
-  z-index: 99999;
+  z-index: 99;
   box-shadow: 0 0 25px rgb(0,0,0);
   padding: 10px 90px;
 }

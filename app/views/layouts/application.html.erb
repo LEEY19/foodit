@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Foodit</title>
+    <title>Potacto</title>
     <%= csrf_meta_tags %>
 
     <script src="https://use.fontawesome.com/2263772b85.js"></script>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track'=> true %>
 
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track'=> true %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0">
   </head>
 
-  <body style="font-family: Avenir;>
-
-    <nav class="navbar navbar-default" role="navigation" id="foodie_nav">
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top" id="foodie_nav">
       <div id="bbbbb">
         <div class="container">
           <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand foodie_nav_link" href="/">Potacto</a>
-          </div>
-
-          
-          <ul class="nav navbar-nav navbar-right" style="color: white;">
-            <li>
-              <%= link_to "What & How", "#", class: "foodie_nav_link", id: "for_what_and_how" %>
-            </li> 
-            <li>
-              <%= link_to "For Foodies", "#", class: "foodie_nav_link", id: "for_foodie" %>
-            </li> 
-            <li>
-              <%= link_to "For Restauranteurs", "#", class: "foodie_nav_link", id: "for_res" %>
-            </li> 
-            <li>
-              <%= link_to "Stay Connected", "#", class: "foodie_nav_link", id: "for_contact" %>
-            </li> 
-          </ul>
-        </div>
+          </div> <!-- end div class="navbar-header" -->
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <%= link_to "What & How", "#", class: "foodie_nav_link", id: "for_what_and_how" %>
+              </li> 
+              <li>
+                <%= link_to "For Foodies", "#", class: "foodie_nav_link", id: "for_foodie" %>
+              </li> 
+              <li>
+                <%= link_to "For Restauranteurs", "#", class: "foodie_nav_link", id: "for_res" %>
+              </li> 
+              <li>
+                <%= link_to "Stay Connected", "#", class: "foodie_nav_link", id: "for_contact" %>
+              </li> 
+            </ul>
+          </div> <!-- end div class="collapse navbar-collapse" -->
+        </div> <!-- end div class="container" -->
       </div>
-
-    </nav>
-
+    </div> <!-- end div class="navbar navbar-default navbar-fixed-top" -->
 
     <%= yield %>
   </body>
