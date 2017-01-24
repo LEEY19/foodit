@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Lato";
+  src: url('Lato.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.transparent {
+  border-width: 0px;
+  -webkit-box-shadow: 0px 0px;
+  box-shadow: 0px 0px;
+  background-color: rgba(0,0,0,0.0);
+  background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+  background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+  background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+  border: 0;
+}
+
+.merchant_1 {
+  position: relative;
+  height: 100vh;
+  background: url('foodie2.jpeg'); 
+  background-size: cover;
+  background-position: center; 
+  overflow: hidden;
+}
+
+.merchant_1_btn {
+  display: block;
+  margin: 25% auto;
+  width: 180px;
+  height: 65px;
+  background-color: #d3004c;
+  border: none;
+  font-family: "Lato";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: .55s ease;
+}
+.merchant_1_btn:hover {
+  background-color: #d3004c;
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+}
+
+.merchant_2_description {
+  height: 40vh;
+  .merchant_2_pic_1 {
+    height: 40vh;
+    background: url('foodie2.jpeg'); 
+    background-size: cover;
+    background-position: center; 
+    border-radius: 50%;  
+    box-shadow: 0 0 9px #888888;
+  }
+  .merchant_2_text {
+    margin: 10vh auto;
+  }
+}
+
+.merchant_3 {
+  height: 80vh;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('merchant3.jpg'); 
+  background-size: cover;
+  background-position: center; 
+  background-attachment: fixed;
+  padding-top: 30vh;
+  text-align: center;
+  color: #A8016C;
+  .merchant_3_form {
+    display: block;
+    margin: 0 auto;
+    height: 80%;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    z-index: 99;
+    .merchant_3_form_input {
+      margin-right: 5px;
+      font-family: "Lato";
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      background: rgba(255,255,255,0.7);
+      border-radius: 5px;
+      border: none;
+      color: white;
+      font-size: 12px;
+      height: 65px;
+      outline: 0;
+      padding-left: 20px;
+      -webkit-transition: background .55s ease;
+      transition: background .55s ease;
+      width: 300px;
+    }
+    .merchant_3_form_input:hover, .merchant_3_form_input:focus {
+      background: white;
+      color: #A8016C;
+    }
+    .merchant_3_form_btn {
+      margin-left: 5px;
+      font-family: "Lato";
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      width: 180px;
+      height: 65px;
+      background-color: #A8016C;
+      border: none;
+      font-size: 12px;
+      transition: .55s ease;
+    }
+    .merchant_3_form_btn:hover {
+      background-color: #A8016C;
+      box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+::-webkit-input-placeholder {
+    font-size: 12px;
+    color: #A8016C;
+}
+
+:-moz-placeholder {
+  font-size: 12px;
+  color: #A8016C;
+}
+
+::-moz-placeholder {
+  font-size: 12px;
+  color: #A8016C;
+}
+
+:-ms-input-placeholder {
+  font-size: 12px;
+  color: #A8016C;    
+}

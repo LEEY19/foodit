@@ -4,6 +4,10 @@ class LeadController < ApplicationController
     @lead = Lead.new
   end
   
+  def merchant
+    @lead = Lead.new
+  end
+
   def create
     @lead = Lead.new(lead_params)
     if @lead.save

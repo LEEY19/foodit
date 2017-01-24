@@ -1,0 +1,36 @@
+<div class="merchant_1">
+  
+  <button class="btn btn-primary merchant_1_btn">Learn More</button>
+</div>
+
+<div class="container">
+  <br>
+  <div class="row merchant_2_description">
+    <div class="col-md-4 merchant_2_pic_1"></div>
+    <div class="col-md-8 merchant_2_text"><h2>Waitlist Management</h2><p>Don't lose customers just because you can't sit them quick enough. Manage your customer queues effectively by sending them notifications when their table is ready, and by enabling them to constantly monitor waiting times</p></div>
+  </div>
+
+  <div class="row merchant_2_description">
+    <div class="col-md-8 merchant_2_text"><h2>Real-time Messaging</h2><p>Offer your customers the ease of contacting you via a chat system. Stay engaged in conversations with your potential customers anytime, anywhere</p></div>
+    <div class="col-md-4 merchant_2_pic_1"></div>
+  </div>
+
+  <div class="row merchant_2_description">
+    <div class="col-md-4 merchant_2_pic_1"></div>
+    <div class="col-md-8 merchant_2_text"><h2>Booking Management</h2><p>Offer convenience to your customers who want to make reservations at your restaurant and manage bookings seamlessly</p></div>
+  </div>
+  <br>
+</div>
+
+<div class="merchant_3">
+  <h3>Drop your email with us to be first in the know when our service is ready</h3>
+  <div class="merchant_3_form">
+
+  <%= form_for @lead, url: lead_index_path(format: 'js'), remote: true, :method => 'post' do |form| %>
+
+    <%= form.text_field :email, placeholder: "Enter your email...", type: 'text', required: true, class: 'merchant_3_form_input'  %>
+    <span><%= form.button "Sign up for beta", class: "btn btn-primary merchant_3_form_btn" %></span>
+
+  <% end %>
+  </div>
+</div>
