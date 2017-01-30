@@ -1,0 +1,35 @@
+.foodies_1 {
+  position: relative;
+  height: 100vh;
+  background: url('foodie1.jpeg'); 
+  background-size: cover;
+  background-position: center; 
+  overflow: hidden;
+}
+
+.foodies_1_btn {
+  display: block;
+  margin: 53vh auto;
+  width: 180px;
+  height: 65px;
+  background-color: #d3004c;
+  border: none;
+  font-family: "Lato";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: .55s ease;
+}
+.foodies_1_btn:hover {
+  background-color: #d3004c;
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+}
+
+.canvas {
+  margin-top: -50px;
+}
+.modal_text {
+  font-family: "Lato";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}

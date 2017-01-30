@@ -1,44 +1,27 @@
 $(document).on("turbolinks:load", function () {
 
-  $("#for_foodie").click(function(e) {
+  $("#features").click(function(e) {
     e.preventDefault();
       $('html,body').animate({
-          scrollTop: $(".foodie_section").offset().top},
-          'slow');
+          scrollTop: $(".features").offset().top - 50},'slow');
   });
 
-  $("#for_res").click(function(e) {
+  $(".merchant_1_btn").click(function(e) {
     e.preventDefault();
       $('html,body').animate({
-          scrollTop: $(".restaurant_section").offset().top},
-          'slow');
+          scrollTop: $(".features").offset().top - 50},'slow');
   });
 
-  $(".heading_1").click(function(e) {
+  $(".foodies_1_btn").click(function(e) {
     e.preventDefault();
       $('html,body').animate({
-          scrollTop: $(".foodie_section").offset().top},
-          'slow');
+          scrollTop: $(".features").offset().top - 50},'slow');
   });
 
-  $(".heading_2").click(function(e) {
+  $("#sign_up_for_beta").click(function(e) {
     e.preventDefault();
       $('html,body').animate({
-          scrollTop: $(".restaurant_section").offset().top},
-          'slow');
+          scrollTop: $(".merchant_3").offset().top},'slow');
   });
 
-  $("#for_contact").click(function(e) {
-    e.preventDefault();
-      $('html,body').animate({
-          scrollTop: $("#contact_us").offset().top},
-          'slow');
-  });
-
-  $("#for_what_and_how").click(function(e) {
-    e.preventDefault();
-      $('html,body').animate({
-          scrollTop: $(".what_and_how_section").offset().top},
-          'slow');
-  });
 });

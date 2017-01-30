@@ -1,5 +1,5 @@
 .icon-bar{
-	background: white !important;
+	background: #d3004c !important;
 }
 
 .navbar-toggle {
@@ -11,6 +11,16 @@
 }
 
 @media screen and (max-width: 768px) {
+  .merchant_3_form {
+    .merchant_3_form_btn {
+      width: unset !important;
+    }
+    .merchant_3_form_input {
+      width: unset !important;
+    }
+}
+}
+/*@media screen and (max-width: 768px) {
   .navbar{
     z-index: 100;
   }
@@ -116,4 +126,4 @@
       padding: 2vh 5vw;
     }
   }
-}
+}*/

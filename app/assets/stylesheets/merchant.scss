@@ -5,6 +5,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Avenir Roman";
+  src: url('avenirroman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Avenir Roman";
+}
+
 .transparent {
   border-width: 0px;
   -webkit-box-shadow: 0px 0px;
@@ -19,7 +30,7 @@
 .merchant_1 {
   position: relative;
   height: 100vh;
-  background: url('foodie2.jpeg'); 
+  background: url('merchant1.jpeg'); 
   background-size: cover;
   background-position: center; 
   overflow: hidden;
@@ -27,7 +38,7 @@
 
 .merchant_1_btn {
   display: block;
-  margin: 25% auto;
+  margin: 53vh auto;
   width: 180px;
   height: 65px;
   background-color: #d3004c;
@@ -44,16 +55,45 @@
 
 .merchant_2_description {
   height: 40vh;
+
   .merchant_2_pic_1 {
     height: 40vh;
-    background: url('foodie2.jpeg'); 
+    background: url('foodies_image_1.png'); 
+    background-size: cover;
+    background-position: center; 
+    border-radius: 50%;  
+    box-shadow: 0 0 9px #888888;
+  }
+  .merchant_2_pic_2 {
+    height: 40vh;
+    background: url('foodies_image_2.png'); 
+    background-size: cover;
+    background-position: center; 
+    border-radius: 50%;  
+    box-shadow: 0 0 9px #888888;
+  }
+  .merchant_2_pic_3 {
+    height: 40vh;
+    background: url('foodies_image_3.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    border-radius: 50%;  
+    box-shadow: 0 0 9px #888888;
+  }
+  .merchant_2_pic_4 {
+    height: 40vh;
+    background: url('foodies_image_4.jpeg'); 
     background-size: cover;
     background-position: center; 
     border-radius: 50%;  
     box-shadow: 0 0 9px #888888;
   }
   .merchant_2_text {
-    margin: 10vh auto;
+    margin: 8vh auto;
+    .merchant_2_text_header {
+      margin-left: 20px;
+      font-size: 30px;
+    }
   }
 }
 
@@ -68,9 +108,16 @@
   background-size: cover;
   background-position: center; 
   background-attachment: fixed;
-  padding-top: 30vh;
+  padding-top: 25vh;
+  padding-bottom: 5vh;
   text-align: center;
   color: #A8016C;
+  .merchant_3_header {
+    font-family: "Lato";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
   .merchant_3_form {
     display: block;
     margin: 0 auto;
@@ -101,6 +148,14 @@
       background: white;
       color: #A8016C;
     }
+    .merchant_3_form_input::-webkit-input-placeholder {
+      font-size: 12px;
+      color: #A8016C;
+    }
+    .merchant_3_form_input::-moz-placeholder {
+      font-size: 12px;
+      color: #A8016C;
+    }
     .merchant_3_form_btn {
       margin-left: 5px;
       font-family: "Lato";
@@ -120,22 +175,55 @@
   }
 }
 
-::-webkit-input-placeholder {
-    font-size: 12px;
+.modal-content {
+  text-align: center;
+  .modal-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
     color: #A8016C;
-}
-
-:-moz-placeholder {
-  font-size: 12px;
-  color: #A8016C;
-}
-
-::-moz-placeholder {
-  font-size: 12px;
-  color: #A8016C;
-}
-
-:-ms-input-placeholder {
-  font-size: 12px;
-  color: #A8016C;    
+    font-weight: bold;
+  }
+  .modal_form_input {
+    font-family: "Lato";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: rgba(251,209,132,0.4);
+    border-radius: 5px;
+    border: none;
+    color: #A8016C;
+    font-size: 12px;
+    height: 65px;
+    outline: 0;
+    padding-left: 20px;
+    -webkit-transition: background .55s ease;
+    transition: background .55s ease;
+    width: 300px;
+  }
+  .modal_form_input::-webkit-input-placeholder {
+    font-size: 12px;
+    color: rgba(168,1,108,0.3);
+  }
+  .modal_form_input::-moz-placeholder {
+    font-size: 12px;
+    color: rgba(168,1,108,0.3);
+  }
+  .modal_form_input:hover, .modal_form_input:focus {
+    background: rgba(251,209,132,0.6);
+    color: #A8016C;
+  }
+  .modal_form_btn {
+    font-family: "Lato";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 180px;
+    height: 65px;
+    background-color: #A8016C;
+    border: none;
+    font-size: 12px;
+    transition: .55s ease;
+  }
+  .modal_form_btn:hover {
+    background-color: #A8016C;
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+  }
 }

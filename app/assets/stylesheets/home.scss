@@ -1,0 +1,79 @@
+.home_1 {
+  height: 100vh;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('home.jpeg'); 
+  background-size: cover;
+  background-position: center; 
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  .home_logo {
+    position: fixed;
+    left: 0;
+    margin-top: -15px;
+    height: 100px;
+  }
+  .home_1_tagline {
+    margin-top: 25vh;
+    font-family: "Lato";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .home_1_subtagline {
+    font-family: "Lato";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+  .home_button_1 {
+    width: 180px;
+    height: 65px;
+    background-color: #d3004c;
+    border: none;
+    font-family: "Lato";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .55s ease;
+    color: white;
+    margin-right: 10px;
+  }
+  .home_button_2 {
+    width: 180px;
+    height: 65px;
+    background-color: #d3004c;
+    border: none;
+    font-family: "Lato";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .55s ease;
+    color: white;
+    margin-left: 10px;
+  }
+  .home_button_1:hover {
+    background-color: #d3004c;
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+  }
+  .home_button_2:hover {
+    background-color: #d3004c;
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+  }
+  .home_button_div {
+    display: inline-block;
+  }
+  .copyright {
+    h5 {
+      color: white !important;
+    }
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
