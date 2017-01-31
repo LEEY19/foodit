@@ -6,18 +6,18 @@
   <p class="home_1_subtagline">Discover smartly | Book conveniently | Queue efficiently | Enquire freely</p>
   <br>
 
-  <div class="home_button_div">
-    <%= form_for :go_foodies, enforce_utf8: false, url: lead_foodies_path, :method => 'get' do |f| %>
-    <%= submit_tag "Foodies", name: nil, class: "btn btn-default home_button_1" %>
-    <% end %>
-  </div>
+    <div class="home_button_div">
+      <%= form_for :go_foodies, enforce_utf8: false, url: lead_foodies_path, :method => 'get' do |f| %>
+      <%= submit_tag "Foodies", name: nil, class: "btn btn-default home_button_1" %>
+      <% end %>
+    </div>
 
-  <div class="home_button_div">
-    <%= form_for :go_restaurants, enforce_utf8: false, url: lead_merchant_path, :method => 'get' do |f| %>
-    <%= submit_tag "Restaurants", name: nil, class: "btn btn-default home_button_2" %>
-    <% end %>
-  </div>
-
+    <div class="home_button_div">
+      <%= form_for :go_restaurants, enforce_utf8: false, url: lead_merchant_path, :method => 'get' do |f| %>
+      <%= submit_tag "Restaurants", name: nil, class: "btn btn-default home_button_2" %>
+      <% end %>
+    </div>
+    
   <div class="copyright">
     <h5>&copy; 2017 Potacto. All Rights Reserved.</h5>
   </div>

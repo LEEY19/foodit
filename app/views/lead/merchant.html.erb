@@ -43,7 +43,7 @@
 
   <%= form_for @lead, url: lead_create_path(format: 'js'), remote: true, :method => 'post' do |form| %>
 
-    <%= form.text_field :email, placeholder: "Your email...", type: 'text', pattern: "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", class: 'merchant_3_form_input'  %>
+    <%= form.text_field :email, placeholder: "Enter your email...", type: 'text', pattern: "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", class: 'merchant_3_form_input'  %>
     <span><%= form.button "Sign up for beta", class: "btn btn-primary merchant_3_form_btn", data: {target: "#myModal", toggle: "modal"}%></span>
 
   <% end %>
