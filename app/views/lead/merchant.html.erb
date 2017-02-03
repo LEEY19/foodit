@@ -66,17 +66,7 @@
       <div class="modal-body">
         <canvas height="0" class="canvas"></canvas>
         <p class="modal_text"></p>
-        <div class="modal_form">
-          <%= form_for :form_submit, url: lead_form_submit_path(format: 'js'), remote: true, :method => 'post' do |f| %>
-          <%= f.text_field :name, placeholder: "Your First and Last Name...", class: "modal_form_input" %>
-          <br>
-          <br>
-          <%= f.text_field :email, placeholder: "Email", class: "modal_form_input", id: "modal_input" %>
-          <br>
-          <br>
-          <%= f.button "Submit", class: "btn btn-primary modal_form_btn" %>
-          <% end %>
-        </div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpTOsUuHJeMQZg27Uya7dqo_9F18mgARhU3f-IwroAYykqpg/viewform?embedded=true&ttl=0" width="760" height="545" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
       </div>
  
     </div>
