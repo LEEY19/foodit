@@ -11,6 +11,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  iframe {
+    width: unset;
+  }
   .merchant_3_form {
     .merchant_3_form_input {
       margin-right: unset !important;

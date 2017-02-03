@@ -176,11 +176,11 @@ body {
 }
 
 .modal-dialog {
-  width: 70vw;
-  margin: 5vh auto;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
   .modal-content {
     text-align: center;
-    height: 70vh;
     .modal-title {
       text-transform: uppercase;
       letter-spacing: 2px;
