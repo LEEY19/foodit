@@ -1,15 +1,30 @@
 .foodies_1 {
   position: relative;
   height: 100vh;
-  background: url('foodie1.jpeg'); 
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('foodie1.jpeg'); 
+  background-attachment: fixed;
   background-size: cover;
   background-position: center; 
   overflow: hidden;
+  text-align: center;
 }
-
+.foodies_tagline {
+  padding: 0 20px 20px;
+  margin: 35vh 0 5vh 0;
+  font-family: "Lato";
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+}
 .foodies_1_btn {
   display: block;
-  margin: 53vh auto;
+  margin: 0 auto;
   width: 180px;
   height: 65px;
   background-color: #d3004c;

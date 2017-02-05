@@ -34,11 +34,21 @@ body {
   background-size: cover;
   background-position: center; 
   overflow: hidden;
+  text-align: center;
+}
+.merchant_tagline {
+  padding: 0 20px 20px;
+  margin: 25vh 0 5vh 0;
+  font-family: "Lato";
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
 }
 
 .merchant_1_btn {
   display: block;
-  margin: 53vh auto;
+  margin: 0 auto;
   width: 180px;
   height: 65px;
   background-color: #d3004c;
@@ -113,6 +123,7 @@ body {
   text-align: center;
   color: #A8016C;
   .merchant_3_header {
+    color: white !important;
     font-family: "Lato";
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -142,7 +153,7 @@ body {
       padding-left: 20px;
       -webkit-transition: background .55s ease;
       transition: background .55s ease;
-      width: 250px;
+      width: 252px;
     }
     .merchant_3_form_input:hover, .merchant_3_form_input:focus {
       background: white;
@@ -161,7 +172,7 @@ body {
       font-family: "Lato";
       text-transform: uppercase;
       letter-spacing: 2px;
-      width: 180px;
+      width: 252px;
       height: 65px;
       background-color: #A8016C;
       border: none;

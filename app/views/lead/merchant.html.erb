@@ -1,5 +1,5 @@
 <div class="merchant_1">
-  
+  <p class="merchant_tagline">Make your brand known, allow your customers to reach you better, and provide a hassle-free dine out experience to your customers</p>
   <button class="btn btn-primary merchant_1_btn">Learn More</button>
 </div>
 
@@ -10,7 +10,7 @@
     <div class="col-md-8 col-xs-12 merchant_2_text">
       <i class="fa fa-3x fa-users" aria-hidden="true"></i><span class="merchant_2_text_header">Waitlist Management</span>
       <hr>
-      <p>Don't lose customers just because you can't sit them quick enough. Manage your customer queues effectively by sending them notifications when their table is ready, and by enabling them to constantly monitor waiting times</p>
+      <p>Don't lose customers or irritate them by letting them standing in queues just because you can't sit them quick enough. Manage your customer queues effectively by sending them notifications when their table is ready, and by enabling them to constantly monitor waiting times</p>
     </div>
   </div>
 
@@ -29,7 +29,7 @@
     <div class="col-md-8 col-xs-12 merchant_2_text">
       <i class="fa fa-3x fa-table" aria-hidden="true"></i><span class="merchant_2_text_header">Booking Management</span>
       <hr>
-      <p>Offer convenience to your customers who want to make reservations at your restaurant and manage bookings seamlessly</p>
+      <p>Increase customer conversion by offering your customers convenience in making reservations at your restaurant. Accept and decline booking requests, manage their booking enquiries, and view the upcoming ones in a single dashboard. </p>
     </div>
   </div>
 
@@ -37,7 +37,7 @@
 </div>
 
 <div class="merchant_3">
-  <p class="merchant_3_header">Drop your email with us to be first in the know when our service is ready</p>
+  <p class="merchant_3_header">Drop your email with us to be first in the know and receive exclusive deals when our service is ready</p>
   <br>
   <div class="merchant_3_form">
 
@@ -45,13 +45,11 @@
 
     <%= form.text_field :email, placeholder: "Enter your email...", type: 'text', class: 'merchant_3_form_input'  %>
     <%= form.hidden_field :lead_type,  :value => "merchant" %>
-    <span><%= form.button "Sign up for beta", class: "btn btn-primary merchant_3_form_btn", data: {target: "#myModal", toggle: "modal"}%></span>
+    <span><%= form.button "Join the Potacto Invite List", class: "btn btn-primary merchant_3_form_btn", data: {target: "#myModal", toggle: "modal"}%></span>
 
   <% end %>
 
   </div>
-
-  <p class="error_box"></p>
 
   <div class="copyright">
     <h5>&copy; 2017 Potacto. All Rights Reserved.</h5>
@@ -64,7 +62,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Sign Up for Beta</h4>
+        <h4 class="modal-title">Join the Potacto Invite List</h4>
       </div>
       <div class="modal-body">
         <canvas height="0" class="canvas"></canvas>
