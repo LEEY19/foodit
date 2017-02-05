@@ -1,4 +1,5 @@
-encoded_url = URI.encode(ENV["REDIS_SERVER_URL"])
-uri = URI.parse(encoded_url)
+# encoded_url = URI.encode(ENV["REDIS_URL"])
+# uri = URI.parse(ENV["REDIS_URL"])
 
-Redis.current = Redis.new(:uri => uri)   
+# Redis.current = Redis.new(:uri => uri)   
+$redis = Redis.new(url: ENV["REDIS_URL"])
