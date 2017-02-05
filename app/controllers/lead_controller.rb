@@ -16,17 +16,19 @@ class LeadController < ApplicationController
   end
 
   def create
-    @email = params[:lead][:email]
-    # @lead = Lead.new(lead_params)
-    # if @lead.save
-    #   LeadMailer.welcome_email(@lead).deliver_now
-    respond_to do |format|
-      @email
-      format.js 
+    @lead = Lead.new(lead_params)
+    if @lead.save
+      LeadMailer.welcome_email(@lead).deliver_later
+      respond_to do |format|
+        format.js 
+      end
+    else
+      @error = @lead.errors.full_messages.first
+      respond_to do |format|
+        @error
+        format.js 
+      end
     end
-    # else
-    #   render 'new'
-    # end
   end
 
   def form_submit
@@ -38,7 +40,7 @@ class LeadController < ApplicationController
   private
   
   def lead_params
-    params.require(:lead).permit(:name, :email, :comments)
+    params.require(:lead).permit(:email, :lead_type)
   end
 
 

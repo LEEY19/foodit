@@ -190,9 +190,8 @@ body {
     .modal-body {
       height: 100%;
     }
-    #google_form{
-      width: 100%;
-      height: 100%;
+    .google_form{
+      display: block;
       margin: 0 auto;
     }
     .modal_form_input {

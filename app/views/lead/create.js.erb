@@ -1,4 +1,10 @@
 // $("#form_button").html('Received').css('color', 'white').css('background', 'rgba(154,59,59,1)').fadeIn();
 // $("#form_button").attr('disabled',true);
+<% if @error == "Email is invalid" %>
+  $(".google_form").hide();
+  $(".error_box").text("Please key in a valid email").show();
+<% else %>
+  $(".error_box").hide();
+  $(".google_form").show();
+<% end %>
 
-$("#modal_input").val("<%= @email %>");

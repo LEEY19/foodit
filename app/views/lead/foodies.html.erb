@@ -53,7 +53,8 @@
 
   <%= form_for @lead, url: lead_create_path(format: 'js'), remote: true, :method => 'post' do |form| %>
 
-    <%= form.text_field :email, placeholder: "Enter your email...", type: 'text', pattern: "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", class: 'merchant_3_form_input'  %>
+    <%= form.text_field :email, placeholder: "Enter your email...", type: 'text', class: 'merchant_3_form_input' %>
+    <%= form.hidden_field :lead_type,  :value => "foodie" %>
     <span><%= form.button "Sign up for beta", class: "btn btn-primary merchant_3_form_btn", data: {target: "#myModal", toggle: "modal"}%></span>
 
   <% end %>
@@ -75,8 +76,8 @@
       </div>
       <div class="modal-body">
         <canvas height="0" class="canvas"></canvas>
-        <p class="modal_text"></p>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpTOsUuHJeMQZg27Uya7dqo_9F18mgARhU3f-IwroAYykqpg/viewform?embedded=true&ttl=0" width="760" height="545" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        <p class="error_box"></p>
+        <iframe class="google_form" src="https://docs.google.com/forms/d/e/1FAIpQLScpTOsUuHJeMQZg27Uya7dqo_9F18mgARhU3f-IwroAYykqpg/viewform?embedded=true&ttl=0" width="760" height="545" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
       </div>
  
     </div>

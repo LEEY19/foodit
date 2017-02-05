@@ -16,9 +16,8 @@ ActiveRecord::Schema.define(version: 20161223012220) do
   enable_extension "plpgsql"
 
   create_table "leads", force: :cascade do |t|
-    t.string   "name"
     t.string   "email"
-    t.string   "comments"
+    t.string   "lead_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
