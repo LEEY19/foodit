@@ -39,10 +39,10 @@ body {
 .merchant_tagline {
   padding: 0 20px 20px;
   margin: 25vh 0 5vh 0;
-  font-family: "Lato";
+  /*font-family: "Lato";*/
   font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  /*text-transform: uppercase;*/
+  letter-spacing: 0.5px;
   color: white;
 }
 
@@ -68,34 +68,38 @@ body {
 
   .merchant_2_pic_1 {
     height: 40vh;
-    background: url('foodies_image_1.png'); 
-    background-size: cover;
+    background: url('merchant_image_1.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center; 
-    border-radius: 50%;  
+    border-radius: 25px;  
     box-shadow: 0 0 9px #888888;
   }
   .merchant_2_pic_2 {
     height: 40vh;
-    background: url('foodies_image_2.png'); 
-    background-size: cover;
+    background: url('merchant_image_2.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center; 
-    border-radius: 50%;  
+    border-radius: 25px;  
     box-shadow: 0 0 9px #888888;
   }
   .merchant_2_pic_3 {
     height: 40vh;
-    background: url('foodies_image_3.jpg'); 
-    background-size: cover;
+    background: url('merchant_image_3.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center; 
-    border-radius: 50%;  
+    border-radius: 25px;  
     box-shadow: 0 0 9px #888888;
   }
   .merchant_2_pic_4 {
     height: 40vh;
-    background: url('foodies_image_4.jpeg'); 
-    background-size: cover;
+    background: url('merchant_image_4.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center; 
-    border-radius: 50%;  
+    border-radius: 25px;  
     box-shadow: 0 0 9px #888888;
   }
   .merchant_2_text {
