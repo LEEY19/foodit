@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Angeline";
+  src: url('angelinevint.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: "Avenir Roman";
 }
@@ -37,12 +44,13 @@ body {
   text-align: center;
 }
 .merchant_tagline {
+  font-family: "Angeline";
   padding: 0 20px 20px;
   margin: 25vh 0 5vh 0;
   /*font-family: "Lato";*/
-  font-size: 20px;
+  font-size: 5vh;
   /*text-transform: uppercase;*/
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   color: white;
 }
 
@@ -108,6 +116,9 @@ body {
       margin-left: 20px;
       font-size: 30px;
     }
+    p {
+      font-size: 2.5vh;
+    }
   }
 }
 
@@ -126,6 +137,8 @@ body {
   padding-bottom: 5vh;
   text-align: center;
   color: #A8016C;
+  padding-left: 5px;
+  padding-right: 5px;
   .merchant_3_header {
     color: white !important;
     font-family: "Lato";

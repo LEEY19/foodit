@@ -11,8 +11,14 @@
 }
 
 @media screen and (max-width: 768px) {
-  iframe {
+  .google_form {
     width: unset;
+  }
+  .foodies_tagline {
+    margin: 30vh 0 5vh 0 !important;
+  }
+  .merchant_tagline {
+    margin: 14vh 0 5vh 0 !important;
   }
   .merchant_3_form {
     .merchant_3_form_input {
