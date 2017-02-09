@@ -13,8 +13,8 @@
 }
 
 @font-face {
-  font-family: "Angeline";
-  src: url('angelinevint.ttf') format('truetype');
+  font-family: "League";
+  src: url('leaguegothic.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -44,7 +44,7 @@ body {
   text-align: center;
 }
 .merchant_tagline {
-  font-family: "Angeline";
+  font-family: "League";
   padding: 0 20px 20px;
   margin: 25vh 0 5vh 0;
   /*font-family: "Lato";*/
