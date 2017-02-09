@@ -19,14 +19,19 @@ class LeadController < ApplicationController
     @lead = Lead.new(lead_params)
     if @lead.save
       LeadMailer.welcome_email(@lead).deliver_later
-      respond_to do |format|
-        format.js 
-      end
+      redirect_to 'https://docs.google.com/forms/d/e/1FAIpQLScpTOsUuHJeMQZg27Uya7dqo_9F18mgARhU3f-IwroAYykqpg/viewform?c=0&w=1'
+      # respond_to do |format|
+      #   format.js 
+      # end
     else
       @error = @lead.errors.full_messages.first
-      respond_to do |format|
-        @error
-        format.js 
+      if @error == "Email is invalid" 
+        respond_to do |format|
+          @error
+          format.js 
+        end
+      else
+        redirect_to 'https://docs.google.com/forms/d/e/1FAIpQLScpTOsUuHJeMQZg27Uya7dqo_9F18mgARhU3f-IwroAYykqpg/viewform?c=0&w=1'
       end
     end
   end
