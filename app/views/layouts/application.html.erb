@@ -4,7 +4,7 @@
     <%= csrf_meta_tags %>
 
     <script src="https://use.fontawesome.com/2263772b85.js"></script>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track'=> true %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track'=> true %>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track'=> true %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0">
@@ -40,12 +40,15 @@
     <% end %>
     <%= yield %>
 
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-91685349-1']);
-        _gaq.push(['_trackPageview']);
-        <%= render "layouts/ga_events" %>
-    </script>
+    <% if Rails.env == "production" %>
+      <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-91685349-1']);
+          _gaq.push(['_trackPageview']);
+          <%= render "layouts/ga_events" %>
+      </script>
+    <% end %>
+
   </body>
 
 </html>
