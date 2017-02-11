@@ -12,6 +12,9 @@ class LeadController < ApplicationController
   end
 
   def foodies
+    # if params[:go_foodies][:track_click] == "true"
+    #   log_event("ButtonClick", "Diners", "To view diners page")
+    # end
     @lead = Lead.new
   end
 

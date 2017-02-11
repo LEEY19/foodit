@@ -39,6 +39,14 @@
     </div> <!-- end div class="navbar navbar-default navbar-fixed-top" -->
     <% end %>
     <%= yield %>
-    <%= render 'layouts/footer' %>
+    <script type="text/javascript">
+      $(document).on("turbolinks:load", function() {
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', '<%= ENV["GOOGLE_TRACKING_ID"] %>']);
+        _gaq.push(['_trackPageview']);
+        <%= render "layouts/ga_events" %>
+      });
+    </script>
   </body>
+
 </html>
