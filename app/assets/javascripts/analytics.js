@@ -5,8 +5,6 @@
 //   return pageTracker._trackPageview();
 //  }
 // });
-$(document).ready(function() {
-  $(".merchant_1").click(function() {
-    alert("asdf");
-  });
-});
+// $(document).ready(function() {
+//   debugger;
+// });

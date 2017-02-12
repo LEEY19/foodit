@@ -2,8 +2,17 @@
 
 <div class="merchant_1">
   <p class="merchant_tagline">Make your brand known. Allow your customers to reach you better, and provide a hassle-free dine out experience to your customers</p>
-  <button class="btn btn-primary merchant_1_btn">Learn More</button>
+  <div class="merchant_3_form">
+    <%= form_for @lead, url: lead_create_path(format: 'js'), remote: true, :method => 'post' do |form| %>
+
+      <%= form.text_field :email, placeholder: "Enter your email...", type: 'text', class: 'merchant_3_form_input' %>
+      <%= form.hidden_field :lead_type,  :value => "foodie" %>
+      <span><%= form.button "Join the Potacto Invite List", class: "btn btn-primary merchant_3_form_btn", data: {target: "#myModal", toggle: "modal"}%></span>
+
+    <% end %>
+  </div>
 </div>
+
 
 <div class="container features">
   <br>

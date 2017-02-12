@@ -2,10 +2,37 @@
 
 <div class="foodies_1">
   <p class="foodies_tagline">From discovering what to eat to getting seated at the dining table, manage all of it at your fingertips in one app</p>
-  <button class="btn btn-primary foodies_1_btn">Learn More</button>
+  <div class="merchant_3_form">
+    <%= form_for @lead, url: lead_create_path(format: 'js'), remote: true, :method => 'post' do |form| %>
+
+      <%= form.text_field :email, placeholder: "Enter your email...", type: 'text', class: 'merchant_3_form_input' %>
+      <%= form.hidden_field :lead_type,  :value => "foodie" %>
+      <span><%= form.button "Join the Potacto Invite List", class: "btn btn-primary merchant_3_form_btn", data: {target: "#myModal", toggle: "modal"}%></span>
+
+    <% end %>
+  </div>
 </div>
 
+<div class="container how_it_works">
+  <br>
+  <p class="how_it_works_title">HOW IT WORKS</p>
+  <div class="col-md-4 col-xs-12 how_it_works_des">
+    <%= image_tag("one.png", class: "how_it_works_pic") %>
+    <p>Browse for what you want to eat based on price, reviews, food type, location and waiting times. Receive smart suggestions based on the mood of your appetite!</p>
+  </div>
+  <div class="col-md-4 col-xs-12 how_it_works_des">
+    <%= image_tag("two.png", class: "how_it_works_pic") %> 
+    <p>Place a table booking if needed. Still not sure about the food or service? Chat directly with the restaurant manager on any enquiries.</p>
+  </div>
+  <div class="col-md-4 col-xs-12 how_it_works_des">
+    <%= image_tag("three.png", class: "how_it_works_pic") %> 
+    <p>Arrive at the restaurant and dine with a peace of mind. If your restaurant of choice does not offer bookings and that there is a long queue, queue virtually by scanning a QR code and be notified through your phone when your table is ready.</p>
+  </div>
+</div>
+<hr>
+
 <div class="container features">
+  <div class="how_it_works_title_div"><p class="how_it_works_title">FEATURES</p></div>
   <br>
   <div class="row merchant_2_description">
     <div class="col-md-4 col-xs-12 foodie_2_pic_1"></div>

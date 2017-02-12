@@ -8,11 +8,14 @@ class LeadController < ApplicationController
   end
   
   def merchant
+    if URI(request.referer).path == "/"
+      log_event("ButtonClick", "Merchants", "To view merchants page")
+    end
     @lead = Lead.new
   end
 
   def foodies
-    if params[:go_foodies][:track_click] == "true"
+    if URI(request.referer).path == "/"
       log_event("ButtonClick", "Diners", "To view diners page")
     end
     @lead = Lead.new
@@ -20,8 +23,10 @@ class LeadController < ApplicationController
 
   def create
     @lead = Lead.new(lead_params)
+    log_event("Join Invite List", "ClickedButton", "Not verified yet")
     if @lead.save
       LeadMailer.welcome_email(@lead).deliver_later
+      log_event("Join Invite List", "ClickedButton", "Verified")
       redirect_to 'https://docs.google.com/forms/d/e/1FAIpQLScpTOsUuHJeMQZg27Uya7dqo_9F18mgARhU3f-IwroAYykqpg/viewform?c=0&w=1'
       # respond_to do |format|
       #   format.js 
@@ -39,11 +44,11 @@ class LeadController < ApplicationController
     end
   end
 
-  def form_submit
-    respond_to do |format|
-      format.js 
-    end
-  end
+  # def form_submit
+  #   respond_to do |format|
+  #     format.js 
+  #   end
+  # end
 
   private
   

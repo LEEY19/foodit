@@ -13,7 +13,7 @@
 
     <div class="home_button_div">
       <%= form_for :go_foodies, enforce_utf8: false, url: lead_foodies_path, :method => 'get' do |f| %>
-      <%= f.hidden_field :track_click,  :value => true %>
+
       <%= submit_tag "Diners", name: nil, class: "btn btn-default home_button_1" %>
       <% end %>
     </div>
@@ -28,4 +28,3 @@
     <h5>&copy; 2017 Potacto. All Rights Reserved.</h5>
   </div>
 </div>
-
