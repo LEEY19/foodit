@@ -21,6 +21,12 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .transparent {
+    background-color: #f8f8f8 !important;
+  }
+  .foodie_nav_link_1 {
+    color: #d3004c !important;
+  }
   .foodies_tagline {
     margin: 30vh 0 5vh 0 !important;
     font-size: 3vh;

@@ -8,14 +8,14 @@ class LeadController < ApplicationController
   end
   
   def merchant
-    if URI(request.referer).path == "/"
+    if request.referer != nil && URI(request.referer).path == "/"
       log_event("ButtonClick", "Merchants", "To view merchants page")
     end
     @lead = Lead.new
   end
 
   def foodies
-    if URI(request.referer).path == "/"
+    if request.referer != nil && URI(request.referer).path == "/"
       log_event("ButtonClick", "Diners", "To view diners page")
     end
     @lead = Lead.new
