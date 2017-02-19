@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
     params = {
       v: 1,
       tid: "UA-91685349-1",
-      cid: client_id
+      cid: client_id,
       t: "event",
       ec: category,
       ea: action,
