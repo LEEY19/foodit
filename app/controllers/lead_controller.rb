@@ -10,24 +10,24 @@ class LeadController < ApplicationController
   def merchant
     if request.referer != nil && URI(request.referer).path == "/"
       gon.event_tracker = {category: "ButtonClick", action: "Merchants", label: "To view merchants page"}
-      log_event("ButtonClick", "Merchants", "To view merchants page")
     end
     @lead = Lead.new
   end
 
   def foodies
     if request.referer != nil && URI(request.referer).path == "/"
-      log_event("ButtonClick", "Diners", "To view diners page")
+      gon.event_tracker = {category: "ButtonClick", action: "Diners", label: "To view diners page"}
     end
     @lead = Lead.new
   end
 
   def create
     @lead = Lead.new(lead_params)
-    log_event("Join Invite List", "ClickedButton", "Not verified yet")
+    if @lead.lead_type == "foodies"
+      join_invite_button("Join Invite List", "ClickedButton", "")
+    end
     if @lead.save
       LeadMailer.welcome_email(@lead).deliver_later
-      log_event("Join Invite List", "ClickedButton", "Verified")
       redirect_to 'https://docs.google.com/forms/d/e/1FAIpQLScpTOsUuHJeMQZg27Uya7dqo_9F18mgARhU3f-IwroAYykqpg/viewform?c=0&w=1'
       # respond_to do |format|
       #   format.js 
