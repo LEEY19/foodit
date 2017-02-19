@@ -6,7 +6,7 @@
     <%= form_for @lead, url: lead_create_path(format: 'js'), remote: true, :method => 'post' do |form| %>
 
       <%= form.text_field :email, placeholder: "Enter your email...", type: 'text', class: 'merchant_3_form_input' %>
-      <%= form.hidden_field :lead_type,  :value => "foodie" %>
+      <%= form.hidden_field :lead_type,  :value => "merchant" %>
       <span><%= form.button "Join the Potacto Invite List", class: "btn btn-primary merchant_3_form_btn", data: {target: "#myModal", toggle: "modal"}%></span>
 
     <% end %>
