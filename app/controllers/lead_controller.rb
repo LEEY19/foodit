@@ -23,7 +23,7 @@ class LeadController < ApplicationController
 
   def create
     @lead = Lead.new(lead_params)
-    if @lead.lead_type == "foodies"
+    if @lead.lead_type == "foodie"
       join_invite_button("Join Invite List", "ClickedButton", "")
     end
     if @lead.save
