@@ -9,6 +9,7 @@ class LeadController < ApplicationController
   
   def merchant
     if request.referer != nil && URI(request.referer).path == "/"
+      gon.event_tracker = {category: "ButtonClick", action: "Merchants", label: "To view merchants page"}
       log_event("ButtonClick", "Merchants", "To view merchants page")
     end
     @lead = Lead.new

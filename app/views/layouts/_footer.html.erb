@@ -7,4 +7,8 @@
   ga('create', 'UA-91685349-1', 'potacto.com');
   ga('send', 'pageview');
 
+  if (typeof gon.event_tracker !== "undefined") {
+    ga('send', 'event', gon.event_tracker.category, gon.event_tracker.action, gon.event_tracker.label);
+  }
+
 </script>

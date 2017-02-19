@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <%= include_gon %>
     <%= csrf_meta_tags %>
 
     <script src="https://use.fontawesome.com/2263772b85.js"></script>
@@ -49,16 +50,11 @@
         </div> <!-- end div class="container" -->
     </div> <!-- end div class="navbar navbar-default navbar-fixed-top" -->
     <% end %>
+
+    <%= Gon::Base.render_data({}) %>
     <%= yield %>
 
-
-      <script type="text/javascript">
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-91685349-1']);
-          _gaq.push(['_trackPageview']);
-          <%= render "layouts/ga_events" %>
-      </script>
-
+    <%= render "layouts/footer" %>
 
   </body>
 

@@ -21,7 +21,7 @@ gem 'sidekiq'
 gem 'redis'
 gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
 gem 'thor', '0.19.1'
-
+gem 'gon'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
