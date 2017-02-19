@@ -1,3 +1,5 @@
+require 'rest_client'
+
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
@@ -20,5 +22,5 @@ class ApplicationController < ActionController::Base
       return false
     end
   end
-  
+
 end
