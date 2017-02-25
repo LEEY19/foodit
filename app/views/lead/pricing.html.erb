@@ -1,0 +1,63 @@
+<div class="pricing_container">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-xs-12">
+      <%= form_for :pricing, enforce_utf8: false, url: lead_thank_you_path, html: {id: "pricing_form_1"}, :method => 'get' do |f| %>
+      <%= f.hidden_field :pricing_type,  :value => "free" %>
+      <%= submit_tag "Diners", name: nil, style: "display: none;" %>
+      <% end %>
+      <div id="pricing_tier_1">
+        <h3>STARTER</h3>
+        <div><i class="fa fa-2x fa-check tick" aria-hidden="true"></i><span>Chat with unlimited customers</span></div>
+        <div><i class="fa fa-2x fa-check tick" aria-hidden="true"></i><span>Customise your restaurant profile</span></div>
+        <div><i class="fa fa-2x fa-check tick" aria-hidden="true"></i><span>Booking service</span></div>
+        <div><i class="fa fa-2x fa-times cross" aria-hidden="true"></i><span>No waitlisting service</span></div>
+        <div><i class="fa fa-2x fa-times cross" aria-hidden="true"></i><span>No marketing benefits</span></div>
+        <div><i class="fa fa-2x fa-times cross" aria-hidden="true"></i><span>No customer engagement analytics</span></div>
+        <br>
+        <p class="tier_price_1">Free</p>
+        <p class="tier_price_2">Forever</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-xs-12">
+      <%= form_for :pricing, enforce_utf8: false, url: lead_thank_you_path, html: {id: "pricing_form_2"}, :method => 'get' do |f| %>
+      <%= f.hidden_field :pricing_type,  :value => "usd15" %>
+      <%= submit_tag "Diners", name: nil, style: "display: none;" %>
+      <% end %>
+      <div class="pricing_tier" id="pricing_tier_2">
+        <h3>FULL SUITE</h3>
+        <div><i class="fa fa-2x fa-check tick" aria-hidden="true"></i><span>Chat with unlimited customers</span></div>
+        <div><i class="fa fa-2x fa-check tick" aria-hidden="true"></i><span>Customise your restaurant profile</span></div>
+        <div><i class="fa fa-2x fa-check tick" aria-hidden="true"></i><span>Booking service</span></div>
+        <div><i class="fa fa-2x fa-check tick" aria-hidden="true"></i><span>Waitlisting service</span></div>
+        <div><i class="fa fa-2x fa-check tick" aria-hidden="true"></i><span>Free banner advertising</span></div>
+        <div><i class="fa fa-2x fa-times cross" aria-hidden="true"></i><span>No customer engagement analytics</span></div>
+        <br>
+        <p class="tier_price_1">USD $15</p>
+        <p class="tier_price_2">/month</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-xs-12">
+      <%= form_for :pricing, enforce_utf8: false, url: lead_thank_you_path, html: {id: "pricing_form_3"}, :method => 'get' do |f| %>
+      <%= f.hidden_field :pricing_type,  :value => "usd25" %>
+      <%= submit_tag "Diners", name: nil, style: "display: none;" %>
+      <% end %>
+      <div class="pricing_tier" id="pricing_tier_3">
+        <h3>ADVANCED</h3>
+        <div><i class="fa fa-2x fa-check tick" aria-hidden="true"></i><span>Chat with unlimited customers</span></div>
+        <div><i class="fa fa-2x fa-check tick" aria-hidden="true"></i><span>Customise your restaurant profile</span></div>
+        <div><i class="fa fa-2x fa-check tick" aria-hidden="true"></i><span>Booking service</span></div>
+        <div><i class="fa fa-2x fa-check tick" aria-hidden="true"></i><span>Waitlisting service</span></div>
+        <div><i class="fa fa-2x fa-check tick" aria-hidden="true"></i><span>Free banner & push notification advertising</span></div>
+        <div><i class="fa fa-2x fa-check tick" aria-hidden="true"></i><span>Customer engagement analytics</span></div>
+        <br>
+        <p class="tier_price_1">USD $25</p>
+        <p class="tier_price_2">/month</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>

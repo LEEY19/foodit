@@ -1,0 +1,61 @@
+.pricing_container {
+  background: url('pricing.png'); 
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; 
+}
+.pricing_tier, #pricing_tier_1 {
+  margin-top: 25vh;
+  transition: .55s ease;
+  border-radius: 5px;
+  padding: 5px 0px 5px 10px;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  h3 {
+    color: #a8016c;
+    text-align: center;
+  }
+  .tick {
+    color: #10756f;
+  }
+  .cross {
+    color: #d70916;
+  }
+  .tier_price_1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #a8016c;
+    font-weight: bold;
+  }
+  .tier_price_2 {
+    margin-top: -15px;
+    text-align: center;
+    color: #696969;
+  }
+}
+.pricing_tier:hover, #pricing_tier_1:hover {
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.thank_you {
+  position: fixed;
+  background: url('pricing.png'); 
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; 
+  height: 100vh;
+  width: 100vw;
+  .tk {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    margin-top: 20vh;
+    width: 70vw;
+    text-align: center;
+    background-color: white;
+    h3 {
+      color: #a8016c;
+    }
+  }
+}

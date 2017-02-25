@@ -18,7 +18,7 @@
 
   <body>
     <%= favicon_link_tag 'favicon.ico' %>
-    <% if @lead != nil %>
+    <% if request.fullpath != "/" %>
     <div class="navbar transparent navbar-default navbar-fixed-top" id="foodie_nav">
         <div class="container">
           <div class="navbar-header">
@@ -39,12 +39,21 @@
               <li>
                 <%= link_to "Restaurant Owners", lead_merchant_path, class: "foodie_nav_link_1 navbar_link" %>
               </li>
+              <% if @lead != nil %>
               <li>
                 <%= link_to "Features", "#", class: "foodie_nav_link_1 navbar_link", id: "features" %>
               </li> 
+              <% end %>
+              <% if request.fullpath == "/diners" %>
               <li>
                 <%= link_to "Join Our Invite List", "#", class: "foodie_nav_link_1 navbar_link", id: "sign_up_for_beta" %>
               </li> 
+              <% elsif request.fullpath == "/restaurants" %>
+              <li>
+                <%= link_to "Get Started", "#", class: "foodie_nav_link_1 navbar_link", id: "sign_up_for_beta" %>
+              </li> 
+              <% end %>
+
             </ul>
           </div> <!-- end div class="collapse navbar-collapse" -->
         </div> <!-- end div class="container" -->
@@ -54,7 +63,9 @@
     <%= Gon::Base.render_data({}) %>
     <%= yield %>
 
-    <%= render "layouts/footer" %>
+    <% if Rails.env == "production" %>
+      <%= render "layouts/footer" %>
+    <% end %>
 
   </body>
 
