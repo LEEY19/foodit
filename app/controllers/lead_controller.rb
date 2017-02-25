@@ -53,7 +53,8 @@ class LeadController < ApplicationController
         end
       end
     else
-      gon.event_tracker = {category: "Get Started", action: "ClickedButton", label: ""}
+      # gon.event_tracker = {category: "Get Started", action: "ClickedButton", label: ""}
+      join_invite_button("Get Started", "ClickedButton", "")
       if @lead.save
         redirect_to lead_pricing_path
       else
