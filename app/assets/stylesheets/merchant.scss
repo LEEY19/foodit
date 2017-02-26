@@ -165,8 +165,17 @@ body {
     border-radius: 25px;  
     box-shadow: 0 0 9px #888888;
   }
+  .merchant_2_pic_5 {
+    height: 40vh;
+    background: url('merchant_image_5.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    border-radius: 25px;  
+    box-shadow: 0 0 9px #888888;
+  }
   .merchant_2_text {
-    margin: 8vh auto;
+    margin: 6vh auto;
     .merchant_2_text_header {
       margin-left: 20px;
       font-size: 30px;
