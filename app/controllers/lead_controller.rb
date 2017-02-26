@@ -56,6 +56,7 @@ class LeadController < ApplicationController
       # gon.event_tracker = {category: "Get Started", action: "ClickedButton", label: ""}
       join_invite_button("Get Started", "ClickedButton", "")
       if @lead.save
+        LeadMailer.welcome_email(@lead).deliver_later
         redirect_to lead_pricing_path
       else
         @error = @lead.errors.full_messages.first
