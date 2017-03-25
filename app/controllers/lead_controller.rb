@@ -75,6 +75,16 @@ class LeadController < ApplicationController
   def pricing
   end
 
+  def query_community
+    @communities = ["Bandar Puteri", "Tropicana Golf and Country Club", "USJ 11/4", "KGSAAS - Greenville"]
+    render json: @communities
+  end
+
+  def query_unit
+    @units = ["23, USJ11/4B", "12, USJ11/4C", "22, USJ11/4B"]
+    render json: @units
+  end
+
   private
   
   def lead_params
