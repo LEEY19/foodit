@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   get "lead/pricing" => "lead#pricing", path: "pricing"
   post "lead/create" => "lead#create"
   get "lead/thank_you" => "lead#thank_you", path: "thanks"
-  post "lead/query_community" => "lead#query_community"
-  post "lead/query_unit" => "lead#query_unit"
+  get "lead/query_community" => "lead#query_community", :as => 'query_community'
+  get "lead/query_unit" => "lead#query_unit", :as => 'query_unit'
 end

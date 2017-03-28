@@ -76,7 +76,7 @@ class LeadController < ApplicationController
   end
 
   def query_community
-    @communities = ["Bandar Puteri", "Tropicana Golf and Country Club", "USJ 11/4", "KGSAAS - Greenville"]
+    @communities = ["Bandar Puteri", "Bandar Putra", "Bandar Klang", "Bandar Bomb", "Tropicana Golf and Country Club", "USJ 11/4", "KGSAAS - Greenville"]
     render json: @communities
   end
 
