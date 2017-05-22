@@ -18,4 +18,5 @@
 
 
 #ignore application.yml
+
 /config/application.yml

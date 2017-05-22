@@ -1,4 +1,6 @@
 class LeadMailer < ApplicationMailer
+	default from: ENV["APP_EMAIL"]
+
   def welcome_email(lead)
     @lead = lead
     @url = 'www.potacto.com'
