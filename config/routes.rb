@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get "lead/thank_you" => "lead#thank_you", path: "thanks"
   get "lead/query_community" => "lead#query_community", :as => 'query_community'
   get "lead/query_unit" => "lead#query_unit", :as => 'query_unit'
+  post "lead/seek_status" => "lead#seek_status", :as => 'seek_status'
 end

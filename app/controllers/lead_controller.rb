@@ -85,6 +85,15 @@ class LeadController < ApplicationController
     render json: @units
   end
 
+  def seek_status
+    @user = Lead.find_by(email: params[:email])
+    if @user != nil 
+      render json: @user
+    else
+      render json: {message: "User is not found"}
+    end
+  end
+
   private
   
   def lead_params
